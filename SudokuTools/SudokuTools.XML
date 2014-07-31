@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SudokuTools</name>
+    </assembly>
+    <members>
+        <member name="T:SudokuTools.SudokuMethods">
+            <summary>
+            A set of generic methods useful for a functioning Sudoku game.
+            </summary>
+        </member>
+        <member name="M:SudokuTools.SudokuMethods.legalMove(System.Int32[0:,0:],System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Determines whether a legal Sudoku move has been made for the given cell on the board.
+            Note: Very efficient
+            </summary>
+            <param name="board"></param>
+            <param name="row"></param>
+            <param name="col"></param>
+            <param name="move"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SudokuTools.SudokuMethods.getValidMoves(System.Int32[0:,0:],System.Int32,System.Int32)">
+            <summary>
+            Returns a list of all valid moves that could be made for the given cell on the board. 
+            </summary>
+            <param name="board"></param>
+            <param name="row"></param>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SudokuTools.SudokuBoardHelper">
+            <summary>
+            Method container to access the generation and solving of sudoku boards/puzzles
+            </summary>
+        </member>
+        <member name="M:SudokuTools.SudokuBoardHelper.generatePuzzle">
+            <summary>
+            Generates a 2D array of size (9,9)
+            with values meeting all rules of a standard Sudoku game.
+            Uses LINQ statments for optimisation.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SudokuTools.SudokuBoardHelper.solvePuzzle(System.Int32[0:,0:])">
+            <summary>
+            Fills the incomplete 2D array
+            with values meeting all rules of a standard Sudoku game.
+            Uses LINQ statments for optimisation.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
